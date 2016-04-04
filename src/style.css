@@ -1,0 +1,21 @@
+.select-button-group {
+  display: inline-block;
+  position: relative;
+}
+  
+.select-button-group .caret {
+  position: relative;
+  top: 5px;
+}
+.color-selection-text {
+  display: inline-block;
+  width: 90%;
+}
+
+.select-button {
+  width: 160px;
+}
+.select-button:hover,
+.select-button:focus {
+  background-color: #fff;
+}

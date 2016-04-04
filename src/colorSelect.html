@@ -1,0 +1,11 @@
+<div class="select-button-group">
+  <button class="btn btn-default input-sm select-button" ng-click="toggleDropDown($event)">
+    <span class="color-selection-text" ng-style="{ 'background-color': model }">{{model? 'Text' : ''}}</span>
+    <span class="caret pull-right"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li ng-repeat="color in colorArray" data-value="{{color}}" ng-style="{'background-color': color }">
+      <a ng-click="setColor($event, color)">Text</a>
+    </li>
+  </ul>
+</div>
